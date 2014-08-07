@@ -1,0 +1,212 @@
+/* Iphone */
+@media only screen 
+and (min-device-width : 319px)
+and (orientation : portrait) {
+	.game {
+		width:290px;
+		height:330px;
+		box-shadow: 3px 3px 5px 3px #737373;
+	}
+	.cell {
+		font-size: 45px;
+		box-shadow: 1px 1px 2px 1px #737373;
+		line-height: 70px;		
+	}
+	#button {
+		border-radius: 5px;
+		background-color: #B5B5B5;
+		font-size: 30px;
+		line-height: 30px;
+		box-shadow: 2px 2px 5px 2px #737373;
+	}	
+}
+/* Iphone landacpe */
+@media only screen 
+and (min-device-width : 400px)
+and (max-device-width : 600px) {
+	.game {
+		width:520px;
+		height:572px;
+		box-shadow: 5px 5px 10px 5px #737373;
+	}
+	.cell {
+		font-size: 85px;
+		box-shadow: 2px 2px 3px 2px #737373;
+		line-height: 110px;
+	}
+	#button {
+		border-radius: 5px;
+		background-color: #B5B5B5;
+		font-size: 40px;
+		line-height: 65px;
+		box-shadow: 2px 2px 5px 2px #737373;
+	}
+}
+/* Some andriod tablets */
+@media only screen 
+and (min-width : 520px)
+and (orientation : portrait) {
+	.game {
+		width:520px;
+		height:572px;
+		box-shadow: 5px 5px 10px 5px #737373;
+	}
+	.cell {
+		font-size: 85px;
+		box-shadow: 2px 2px 3px 2px #737373;
+		line-height: 110px;
+	}
+	#button {
+		border-radius: 5px;
+		background-color: #B5B5B5;
+		font-size: 40px;
+		line-height: 65px;
+		box-shadow: 2px 2px 5px 2px #737373;
+	}
+}
+/* Retina */
+@media only screen 
+and (min-device-width : 1999px) 
+and (max-device-width : 3000px)  {
+	.game {
+		width:1200px;
+		height:1300px;
+		box-shadow: 5px 5px 10px 5px #737373;
+	}
+	.cell {
+		font-size: 200px;
+		box-shadow: 2px 2px 3px 2px #737373;
+		line-height: 280px;
+	}
+	#button {
+		background-color: #B5B5B5;
+		font-size: 110px;
+		line-height: 140px;
+		box-shadow: 2px 2px 5px 2px #737373;
+	}
+}
+@media only screen 
+and (min-device-width : 1599px) 
+and (max-device-width : 20001px)  {
+	.game {
+		width:700px;
+		height:770px;
+		box-shadow: 5px 5px 10px 5px #737373;
+	}
+	.cell {
+		font-size: 120px;
+		box-shadow: 2px 2px 3px 2px #737373;
+		line-height: 160px;
+	}
+	#button {
+		background-color: #B5B5B5;
+		font-size: 70px;
+		line-height: 90px;
+		box-shadow: 2px 2px 5px 2px #737373;
+	}
+}
+/* iPads (portrait and landscape) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	.game {
+		width:520px;
+		height:572px;
+		box-shadow: 5px 5px 10px 5px #737373;
+	}
+	.cell {
+		font-size: 85px;
+		box-shadow: 2px 2px 3px 2px #737373;
+		line-height: 110px;
+
+	}
+	#button {
+		border-radius: 5px;
+		background-color: #B5B5B5;
+		font-size: 45px;
+		line-height: 55px;
+		box-shadow: 2px 2px 5px 2px #737373;
+	}
+}
+/* iPads (portrait) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.game {
+		width:620px;
+		height:680px;
+		box-shadow: 5px 5px 10px 5px #737373;
+	}
+	.cell {
+		font-size: 95px;
+		box-shadow: 2px 2px 3px 2px #737373;
+		line-height: 130px;
+	}
+	#button {
+		border-radius: 5px;
+		background-color: #B5B5B5;
+		font-size: 55px;
+		line-height: 65px;
+		box-shadow: 2px 2px 5px 2px #737373;
+	}
+}
+/* Desktops and laptops */
+@media only screen 
+and (min-device-width : 1224px)
+and (max-device-width : 1599px)
+and (orientation : landscape) {
+	.game {
+		width:520px;
+		height:572px;
+		box-shadow: 5px 5px 10px 5px #737373;
+	}
+	.cell {
+		font-size: 85px;
+		box-shadow: 2px 2px 3px 2px #737373;
+		line-height: 110px;
+	}
+	#button {
+		border-radius: 5px;
+		background-color: #B5B5B5;
+		font-size: 55px;
+		line-height: 65px;
+		box-shadow: 2px 2px 5px 2px #737373;
+	}
+}
+/* Common settings */
+body {
+	background-color: #B5B5B5;
+}
+.game {
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+	background-color:#EEE9E9;
+	padding:1%;
+	border-radius: 10px;
+	font-family: Arial;
+	text-align: center;
+	color: #EEE9E9
+	}
+.cell {
+	width:23%;
+	height:20%;
+	margin-top:auto;
+	margin-bottom:auto;
+	background-color: #B5B5B5;
+	margin:1%;
+	border-radius: 5px;
+	float: left;		  
+	}	
+#button {
+	float: left;
+	color: #EEE9E9;
+	width: 98%;
+	height: 11%;
+	margin:1%;
+	background-color: #B5B5B5;
+}
