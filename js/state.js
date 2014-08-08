@@ -70,7 +70,7 @@ function module() {
 				indexOf0 = 4;
 			}
 
-			if ((counter + indexOf0) % 2){
+			if ((counter + indexOf0-1) % 2){
 				return true;
 			}
 			else {
@@ -78,7 +78,15 @@ function module() {
 			}
 		}
 
-		canBeSolved();
+		var a = canBeSolved();
+
+		while(!a)
+		{
+			arr.sort(function() {
+	 		return 0.5 - Math.random();
+			});
+			a = canBeSolved();
+		}
 
 		for (i in arr) {
 
