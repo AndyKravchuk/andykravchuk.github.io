@@ -1,5 +1,5 @@
 /* Iphone */
-@media only screen 
+@media only screen
 and (min-device-width : 319px)
 and (orientation : portrait) {
 	.game {
@@ -10,7 +10,7 @@ and (orientation : portrait) {
 	.cell {
 		font-size: 45px;
 		box-shadow: 1px 1px 2px 1px #737373;
-		line-height: 70px;		
+		line-height: 70px;
 	}
 	#button {
 		border-radius: 5px;
@@ -43,7 +43,7 @@ and (max-device-width : 600px) {
 	}
 }
 /* Some andriod tablets */
-@media only screen 
+@media only screen
 and (min-width : 520px)
 and (orientation : portrait) {
 	.game {
@@ -65,8 +65,8 @@ and (orientation : portrait) {
 	}
 }
 /* Retina */
-@media only screen 
-and (min-device-width : 1999px) 
+@media only screen
+and (min-device-width : 1999px)
 and (max-device-width : 3000px)  {
 	.game {
 		width:1200px;
@@ -85,8 +85,8 @@ and (max-device-width : 3000px)  {
 		box-shadow: 2px 2px 5px 2px #737373;
 	}
 }
-@media only screen 
-and (min-device-width : 1599px) 
+@media only screen
+and (min-device-width : 1599px)
 and (max-device-width : 20001px)  {
 	.game {
 		width:700px;
@@ -106,8 +106,8 @@ and (max-device-width : 20001px)  {
 	}
 }
 /* iPads (portrait and landscape) */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 	.game {
 		width:520px;
@@ -129,9 +129,9 @@ and (max-device-width : 1024px) {
 	}
 }
 /* iPads (portrait) */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
 	.game {
 		width:620px;
@@ -190,7 +190,11 @@ body {
 	border-radius: 10px;
 	font-family: Arial;
 	text-align: center;
-	color: #EEE9E9
+	color: #EEE9E9;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 	}
 .cell {
 	width:23%;
