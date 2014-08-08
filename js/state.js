@@ -34,7 +34,54 @@ function module() {
 		arr.sort(function() {
 	 		return 0.5 - Math.random();
 		});
+		console.log(arr);
+		function canBeSolved() {
+			var current,
+				indexOf0,
+				counter = 0,
+				j;
+			for (var i = 0; i < arr.length; i++) {
+				console.log("i = "+arr[i]);
+				if (arr[i] === 0) {
+					continue;
+				}
 
+				current = arr[i];
+				console.log(current + " > ");
+				for (j = i +1; j < arr.length; j++ ) {
+
+					if (arr[j] === 0) {
+						continue;
+					}
+
+					if (current > arr[j]) {
+						console.log(arr[j]);
+						counter += 1;
+					}
+				}
+			}
+			if (arr.indexOf(0) < 4) {
+				indexOf0 = 1;
+			}
+			else if (arr.indexOf(0) < 8) {
+				indexOf0 = 2;
+			}
+			else if (arr.indexOf(0) < 12) {
+				indexOf0 = 3;
+			}
+			else {
+				indexOf0 = 4;
+			}
+
+			if ((counter + indexOf0) % 2){
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+		canBeSolved();
 		for (i in arr) {
 
 			if (colum === 4) {
@@ -177,7 +224,7 @@ function module() {
 				continue;
 			}
 
-			if (grid[cell].id === grid[cell].value-1) {
+			if ((+grid[cell].id+1) === grid[cell].value) {
 				counter += 1;
 			}
 
