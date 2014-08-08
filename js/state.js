@@ -34,20 +34,18 @@ function module() {
 		arr.sort(function() {
 	 		return 0.5 - Math.random();
 		});
-		console.log(arr);
+
 		function canBeSolved() {
 			var current,
 				indexOf0,
 				counter = 0,
 				j;
 			for (var i = 0; i < arr.length; i++) {
-				console.log("i = "+arr[i]);
 				if (arr[i] === 0) {
 					continue;
 				}
 
 				current = arr[i];
-				console.log(current + " > ");
 				for (j = i +1; j < arr.length; j++ ) {
 
 					if (arr[j] === 0) {
@@ -55,7 +53,6 @@ function module() {
 					}
 
 					if (current > arr[j]) {
-						console.log(arr[j]);
 						counter += 1;
 					}
 				}
@@ -82,6 +79,7 @@ function module() {
 		}
 
 		canBeSolved();
+
 		for (i in arr) {
 
 			if (colum === 4) {

@@ -18,10 +18,10 @@ and (orientation : portrait) {
 		font-size: 30px;
 		line-height: 30px;
 		box-shadow: 2px 2px 5px 2px #737373;
-	}	
+	}
 }
 /* Iphone landacpe */
-@media only screen 
+@media only screen
 and (min-device-width : 400px)
 and (max-device-width : 600px) {
 	.game {
@@ -200,8 +200,9 @@ body {
 	background-color: #B5B5B5;
 	margin:1%;
 	border-radius: 5px;
-	float: left;		  
-	}	
+	float: left;
+	cursor: pointer;
+	}
 #button {
 	float: left;
 	color: #EEE9E9;
@@ -209,4 +210,5 @@ body {
 	height: 11%;
 	margin:1%;
 	background-color: #B5B5B5;
+	cursor: pointer;
 }
