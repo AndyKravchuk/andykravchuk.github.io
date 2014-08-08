@@ -127,9 +127,10 @@ function module() {
 					continue;
 				}
 
-				if (this[cell].value === 0) {
+				if ((this[cell].value === 0)&&(!a)) {
 					a = document.getElementById(this[cell].id);
 					a.style.visibility = "hidden";
+					a = 1;
 					continue;
 				}
 
